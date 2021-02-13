@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type = 'image/x-icon' href="/img/favicon.ico">
+    <title>Remote Desktop Tool - Dashboard</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Remote Desktop Tool</a>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+      </nav>
+    <div class="container-fluid p-4">
+      <div id="clients" class="row card-deck"></div>
+      <div id="preloader-container">
+        <div class="preloader"></div>
+      </div>
+    </div>
+  <script src="/js/socket.io.min.js"></script>
+  <script src="/js/dashboard.js"></script>
+</body>
+</html>

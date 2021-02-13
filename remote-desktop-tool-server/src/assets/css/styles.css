@@ -1,0 +1,54 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar {
+  height: 70px;
+  z-index: 9999;
+}
+
+#preloader-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(242, 242, 242, 0.2);
+}
+
+.preloader {
+    width: 70px;
+    height: 70px;
+    border: 10px solid #eee;
+    border-top: 10px solid #666;
+    border-radius: 50%;
+    animation-name: girar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .container-fluid{
+      position: relative;
+      height: 100%;
+      margin-top: -70px;
+      padding-top: 95px !important;
+  }
+
+  video{
+    height: 100%;
+    margin-top: -25px;
+  }

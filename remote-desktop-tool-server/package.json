@@ -1,0 +1,26 @@
+{
+  "name": "remote-desktop-tool-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron src/index.js",
+    "package-win-32": "electron-packager . remote-desktop-tool-server --out=build --prune=true --platform=win32 --arch=ia32 --icon=src/assets/img/favicon.ico --version-string.CompanyName=Company --version-string.ProductName=\"Remote Desktop Tool Server\"",
+    "package-win-64": "electron-packager . remote-desktop-tool-server --out=build --prune=true --platform=win32 --arch=x64 --icon=./assets/img/favicon.ico --version-string.CompanyName=Company --version-string.ProductName=\"Remote Desktop Tool Server\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "helmet": "^4.4.1",
+    "peer": "^0.6.1",
+    "socket.io": "^3.1.0"
+  },
+  "devDependencies": {
+    "electron": "^11.2.1",
+    "electron-packager": "^15.2.0",
+    "electron-rebuild": "^2.3.4"
+  }
+}
